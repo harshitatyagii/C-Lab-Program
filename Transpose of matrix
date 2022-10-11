@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main()
+{
+int a[3][3],temp,i,j;
+printf("enter the elements of matrix A;\n");
+for(i=0;i<3;i++)
+{
+    for(j=0;j<3;j++)
+    {
+    scanf ("%d",&a[i][j]);
+         }
+}   
+for (i=0;i<3;i++)
+{
+    for (j=0;j<3;j++)
+    {
+        printf ("%d\t",a[i][j]);
+        }
+    printf("\n");
+    }
+    for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+        temp=a[i][j];
+        a[i][j]=a[j][i];
+        a[j][i]=temp;
+            }
+    }
+    printf ("\n");
+    for(i=0;i<3;i++)
+    {
+    printf ("\n");
+    for (j=0;j<3;j++)
+        printf("%d\t",a[j][i]);
+    }
+    printf(" \n");
+    return 0;
+}
+
+output
+ 
+ A=A'
+
+1 2 3
+4 5 6
+7 8 9
+
+1 4 7
+2 5 8
+3 6 9
