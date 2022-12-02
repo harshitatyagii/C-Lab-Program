@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main() {
+    char color;
+    printf("enter the color");
+    scanf("%c",&color);
+    if (color=='o')
+    {
+    printf("color is orange");
+    }
+     else if (color=='b')
+     {
+    printf("color is black");
+     }
+     else if(color=='a')
+     {
+    printf("color is aqua");
+     }
+     else if(color=='y')
+     {
+    printf("color is yellow");
+     }
+     else if(color=='r')
+     {
+    printf("color is red");
+     }
+     else if(color=='g')
+     {
+    printf("color is green");
+     }
+     else if (color=='p')
+     {
+    printf("color is pink");
+     }
+     else if(color=='m')
+     {
+    printf("color is maroon");
+     }
+      else if(color=='w')
+      {
+    printf("color is white");
+     }
+    else
+    {
+printf("invalid color");
+}
+    return 0;
+}
