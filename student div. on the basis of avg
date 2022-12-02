@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int sub1,sub2,sub3,sub4,sub5;
+    float avg;
+    printf("enter the subject marks");
+    scanf("%d%d%d%d%d",&sub1,&sub2,&sub3,&sub4,&sub5);
+    avg=(sub1+sub2+sub3+sub4+sub5)/5;
+    if(avg>=60){
+        printf("first div.");
+    }
+    else if (avg>50){
+        printf("second div.");
+    }
+else if (avg>40){
+    printf("third div.");
+}
+else {
+    printf("student is fail");
+}
+    return 0;
+}
