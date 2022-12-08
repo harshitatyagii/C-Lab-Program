@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+int i,x,y;
+int pow=1;
+printf("enter the base value");
+scanf ("%d",&x);
+printf("enter the power value");
+scanf("%d",&y);
+for (i=1;i<=y;i=i+1)
+{
+    pow=pow*x;
+}
+printf("%d",pow);
+
+
+    return 0;
+}
