@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void main() {
+     int temp,i,j,pass;
+     int x[5];
+     printf ("enter the array list");
+     for(i=0;i<5;i++)
+     {
+         scanf("%d",&x[i]);
+     }
+for (pass=1;pass<5-pass;pass++)
+{
+    for(j=0;j<5;j++)
+    {
+        if (x[j]>x[j+1])
+        {
+            temp=x[j+1];
+            x[j+1]=x[j];
+            x[j]=temp;
+        }
+    }
+}
+for(i=0;i<5;i++)
+{
+    printf("%d",x[i]);
+}
+ 
+}
+input 
+3
+4
+5
+6
+7
+9
+output 3 4 5 6 7 9
