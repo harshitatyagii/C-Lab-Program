@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+char str1[20]="very";
+char str2[20]="good";       
+
+strcat(str1,str2);
+puts(str1);         o/p verygood
+
+starncat(str1,str2,3);
+puts(str1);       o/p verygoo
+
+int k;
+k=strcmp(str1,str2);
+printf(%d,k); 
+
+strcpy(str1,"hapur");
+printf("%s",str1);    o/p hapur 
+
+strncpy(str1,str2,3);
+printf("%s",str1);   o/p goo
+
+char str[10]="delhi";
+int k;
+k=strlen(str1);
+printf("%d",k); o/p 5
+
+
+    return 0;
+}
