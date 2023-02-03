@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   int *ptr;
+   int n,i,size;
+   int sum=0;
+   printf ("enter the value of n");
+   scanf ("%d",&n);
+   ptr = (int*) malloc (n*sizeof(int));
+   for(i=0;i<n;i++)
+   {
+       scanf("%d",ptr+i);
+   }
+    for(i=0;i<n;i++)
+    {
+        sum=sum+(*(ptr+i));
+    }
+    printf("%d",sum);
+    free (ptr);
+    ptr=NULL;
+
+    return 0;
+}
